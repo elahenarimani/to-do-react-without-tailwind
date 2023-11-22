@@ -8,6 +8,7 @@ input{
     color: gray;
     border: none;
     padding-left: 20px;
+    display: block;
 }
 .number-complete{
     font-size: 40px;
