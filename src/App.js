@@ -18,13 +18,22 @@ function App() {
         <div>
           <span className='number-complete'>7</span>
           <span>total</span>
-        </div>
-        
+        </div>  
       </header>
-      <Input valueStatuse={inpVal} onchageHandler={(e) => setInpVal(e.target.value)}/>
-      <Button onclickHandler={() => setData([...data,inpVal])}>+</Button>
+      <div>
+        <Input valueStatuse={inpVal} onchageHandler={(e) => setInpVal(e.target.value)}/>
+      </div>
+      <div>  
+        <Button onclickHandler={() => setData([...data,inpVal])}>+</Button>
+      </div>
+      <div>
+        {data.map(item => {
+          return(
+            <ToDoBox text={item}/>
+          )
+        })}
+      </div>
     </div>
   );
 }
-
 export default App;
