@@ -1,4 +1,4 @@
-.text{
+.to-do-wrapper{
     width: 600px;
     height: 50px;
     background-color: #DACED0;
@@ -8,4 +8,9 @@
     border: none;
     padding-left: 20px;
     display: block;    
+}
+.to-do-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
